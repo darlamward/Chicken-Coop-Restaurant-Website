@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Coop Order Online</title>
+    <link rel="stylesheet" href="./styles/order.css" />
+  </head>
+  <body>
+    <div id="pageHeader">
+      <nav>
+        <a
+          ><img
+            src="./menuimages/Chicken Coop_Sprint1.png"
+            alt="orderLogo"
+            width="50"
+            height="50"
+            id="orderLogo"
+        /></a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="coupon.html">Coupons</a>
+        <a class="align-right" href="order.html"
+          ><button class="ordbut">Order Online</button></a
+        >
+      </nav>
+    </div>
+    <main>
+      <div id="orderMenu">
+        <div id="orderTitle">
+          <br />
+          <h3>ORDER ONLINE</h3>
+        </div>
+      </div>
+    </main>
+
+    <!--code for selecting items-->
+    <div id="MenuSelect">
+      <!--breakfast-->
+      <div id="Breakfast">
+        <img
+          id="bigbreakfast"
+          src="./menuimages/bigbreakfast.png"
+          alt="bigbreakfast"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="chickenwaffles"
+          src="./menuimages/chickenandwaffles.png"
+          alt="chicken&waffles"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="pancakes"
+          src="./menuimages/pancakes.png"
+          alt="pancakes"
+          width="25%"
+          height="25%"
+        />
+      </div>
+
+      <div id="BreakfastSel">
+        <span id="bigbreakfastSel">
+          <button onclick="bigbreakfast()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="bigbreakfastQTY"
+            name="bigbreakfastQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="chickenwafflesSel">
+          <button onclick="chickenwaffles()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="chickenwafflesQTY"
+            name="chickenwafflesQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="pancakesSel">
+          <button onclick="pancakes()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="pancakesQTY"
+            name="pancakesQTY"
+            value="1"
+          />
+        </span>
+      </div>
+
+      <!--lunch-->
+      <div id="Lunch">
+        <img
+          id="salad"
+          src="./menuimages/salad.png"
+          alt="salad"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="sandwich"
+          src="./menuimages/sandwich.png"
+          alt="sandwich"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="wrap"
+          src="./menuimages/wrap.png"
+          alt="wrap"
+          width="25%"
+          height="25%"
+        />
+      </div>
+
+      <div id="LunchSel">
+        <span id="saladSel">
+          <button onclick="salad()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="saladQTY"
+            name="saladQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="sandwichSel">
+          <button onclick="sandwich()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="sandwichQTY"
+            name="sandwichQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="wrapSel">
+          <button onclick="wrap()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="wrapQTY"
+            name="wrapQTY"
+            value="1"
+          />
+        </span>
+      </div>
+      <!--dinner-->
+      <div id="Dinner">
+        <img
+          id="feast"
+          src="./menuimages/feast.png"
+          alt="feast"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="kebab"
+          src="./menuimages/kebab.png"
+          alt="kebab"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="coopdinner"
+          src="./menuimages/coopdinner.png"
+          alt="coopdinner"
+          width="25%"
+          height="25%"
+        />
+      </div>
+
+      <div id="DinnerSel">
+        <span id="feastSel">
+          <button onclick="feast()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="feastQTY"
+            name="feastQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="kebabSel">
+          <button onclick="kebab()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="kebabQTY"
+            name="kebabQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="coopdinnerSel">
+          <button onclick="coopdinner()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="coopdinnerQTY"
+            name="coopdinnerQTY"
+            value="1"
+          />
+        </span>
+      </div>
+      <!--dessert-->
+      <div id="Dessert">
+        <img
+          id="cookie"
+          src="./menuimages/cookie.png"
+          alt="cookie"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="sundae"
+          src="./menuimages/sundae.png"
+          alt="sundae"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="pie"
+          src="./menuimages/pie.png"
+          alt="pie"
+          width="25%"
+          height="25%"
+        />
+      </div>
+
+      <div id="DessertSel">
+        <span id="cookieSel">
+          <button onclick="coopcookie()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="cookieQTY"
+            name="cookieQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="sundaeSel">
+          <button onclick="sundae()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="sundaeQTY"
+            name="sundaeQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="pieSel">
+          <button onclick="pie()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input size="10" type="number" id="pieQTY" name="pieQTY" value="1" />
+        </span>
+      </div>
+      <!--bevrages-->
+      <div id="Beverages">
+        <img
+          id="milkshake"
+          src="./menuimages/milkshake.png"
+          alt="milkshake"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="smoothie"
+          src="./menuimages/smoothie.png"
+          alt="smoothie"
+          width="25%"
+          height="25%"
+        />
+        <img
+          id="soda"
+          src="./menuimages/soda.png"
+          alt="soda"
+          width="25%"
+          height="25%"
+        />
+      </div>
+
+      <div id="BeveragesSel">
+        <span id="milkshakeSel">
+          <button onclick="milkshake()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="milkshakeQTY"
+            name="milkshakeQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="smoothieSel">
+          <button onclick="smoothie()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="smoothieQTY"
+            name="smoothieQTY"
+            value="1"
+          />
+        </span>
+
+        <span id="sodaSel">
+          <button onclick="soda()">Add to Order</button>
+          <label for="QTY">QTY: </label>
+          <input
+            size="10"
+            type="number"
+            id="sodaQTY"
+            name="sodaQTY"
+            value="1"
+          />
+        </span>
+      </div>
+    </div>
+
+    <hr />
+    <!--code for the form-->
+    <form>
+      <div id="FormDiv">
+        <label for="FirstName">First name: </label>
+        <input type="text" id="FirstName" name="FirstName" placeholder="John" />
+      </div>
+      <div id="FormDiv">
+        <label for="LastName">Last name: </label>
+        <input type="text" id="LastName" name="LastName" placeholder="Doe" />
+      </div>
+      <div id="FormDiv">
+        <label for="PhoneNum">Phone number: </label>
+        <input
+          type="text"
+          id="PhoneNum"
+          name="PhoneNum"
+          placeholder="XXX-XXX-XXXX"
+        />
+      </div>
+      <div id="FormDiv">
+        <label for="CardNum">Card number: </label>
+        <input
+          type="text"
+          id="CardNum"
+          name="CardNum"
+          placeholder="1234 1234 1234 1234"
+        />
+      </div>
+      <div id="FormDiv">
+        <label for="CardExp">Expiry date: </label>
+        <input type="date" id="CardExp" name="CardExp" />
+      </div>
+      <div id="FormDiv">
+        <label for="CVV">CVV: </label>
+        <input type="text" id="CVV" name="CVV" placeholder="123" />
+      </div>
+      <div id="FormDiv">
+        <label for="Email">Email: </label>
+        <input
+          type="email"
+          id="Email"
+          name="Email"
+          placeholder="Example@email.com"
+        />
+      </div>
+
+      <div id="FormDiv">
+        <label for="Del">Delivery: </label>
+        <input type="checkbox" id="Delivery" name="Del" onclick="ShowAdd()" />
+      </div>
+
+      <div id="Address" style="display: none">
+        <div id="FormDiv">
+          <label for="AddLine1">Address Line 1: </label>
+          <input
+            type="text"
+            id="AddLine1"
+            name="AddLine1"
+            placeholder="Address Line 1"
+          />
+        </div>
+        <div id="FormDiv">
+          <label for="AddLine2">Address Line 2: </label>
+          <input
+            type="text"
+            id="AddLine2"
+            name="AddLine2"
+            placeholder="Address Line 2"
+          />
+        </div>
+        <div id="FormDiv">
+          <label for="Email">City: </label>
+          <input type="City" id="City" name="City" placeholder="City" />
+        </div>
+        <div id="FormDiv">
+          <label for="Postal">Postal Code: </label>
+          <input type="text" id="Postal" name="Postal" placeholder="A1A1A1" />
+        </div>
+      </div>
+
+      <input type="text" id="Order" name="Order" />
+      <hr />
+      <div id="CartDiv">
+        <label for="Cart">Cart</label>
+        <p id="Cart"></p>
+      </div>
+
+      <input id="PlaceOrder" type="submit" value="Place Order" />
+    </form>
+    <div class="footer"><footer></footer><br>&copy; All Rights Reserved.</footer> </div>
+    <script src="./scripts/orderscript.js"></script>
+  </body>
+</html>

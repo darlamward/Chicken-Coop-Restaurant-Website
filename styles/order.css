@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&di splay=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#pageHeader {
+  background-color: #b83b1f;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  line-height: 50px;
+}
+
+#header {
+  background-color: #b83b1f;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+nav {
+  border-width: 3px;
+  border-style: solid;
+  border-color: #b83b1f;
+  background-color: white;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  font-family: "Pacifico", "cursive";
+  font-size: 150%;
+  display: block;
+  color: #b83b1f;
+  text-decoration: none;
+  padding: 15px 18px;
+}
+
+nav .align-right {
+  margin-left: auto;
+}
+
+#orderMenu {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#orderTitle {
+  font-family: "Raleway", sans-serif;
+  color: #b83b1f;
+  text-align: center;
+  line-height: 0px;
+  font-size: 500%;
+}
+
+.ordbut {
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+  font-size: 100%;
+  padding: 9px 25px;
+  background-color: #b83b1f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+}
+
+.ordbut:hover {
+  background-color: black;
+}
+
+/*Breakfast*/
+
+#Breakfast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bigbreakfast {
+  padding-right: 5%;
+}
+
+#chickenwaffles {
+  padding-right: 5%;
+}
+
+#BreakfastSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#bigbreakfastSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#chickenwafflesSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#pancakesSel {
+  width: 25%;
+  padding-left: 5%;
+}
+/*Lunch*/
+
+#Lunch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#salad {
+  padding-right: 5%;
+}
+
+#sandwich {
+  padding-right: 5%;
+}
+
+#LunchSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#saladSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#sandwichSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#wrapSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+/*Dinner*/
+
+#Dinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#feast {
+  padding-right: 5%;
+}
+
+#kebab {
+  padding-right: 5%;
+}
+
+#DinnerSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#feastSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#kebabSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#coopdinnerSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+/*Dessert*/
+
+#Dessert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cookie {
+  padding-right: 5%;
+}
+
+#sundae {
+  padding-right: 5%;
+}
+
+#DessertSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#cookieSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#sundaeSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#pieSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+/*Beverages*/
+
+#Beverages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#milkshake {
+  padding-right: 5%;
+}
+
+#smoothie {
+  padding-right: 5%;
+}
+
+#BeveragesSel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#milkshakeSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#smoothieSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+#sodaSel {
+  width: 25%;
+  padding-left: 5%;
+}
+
+/*inputs*/
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #b83b1f;
+  color: whitesmoke;
+  border-radius: 1ch;
+  border: none;
+}
+
+button:hover {
+  background-color: black;
+}
+
+hr {
+  height: 1em;
+  background-color: #b83b1f;
+  border: none;
+}
+
+#FormDiv {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 2rem;
+  padding-bottom: 1ch;
+}
+
+#CardExp {
+  width: 184px;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+#PlaceOrder {
+  display: flex;
+  background-color: #b83b1f;
+  color: whitesmoke;
+  border-radius: 1ch;
+  border: none;
+  font-size: larger;
+  height: 50px;
+  width: 200px;
+  margin: 2rem;
+  margin-left: calc(100% - 200px - 2rem);
+  margin-bottom: 50px;
+}
+
+#PlaceOrder:hover {
+  background-color: black;
+}
+
+#Order {
+  display: none;
+}
+
+#CartDiv label {
+  font-size: 45pt;
+  color: #b83b1f;
+  font-family: "Raleway", sans-serif;
+  margin-left: calc(100% - 127.75px - 2rem);
+}
+
+#CartDiv p {
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto !important;
+  min-height: 5%;
+  background-color: #b83b1f;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: px;
+}
